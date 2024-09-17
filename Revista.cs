@@ -1,12 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SistemaBiblioteca
 {
-    internal class Revista
+    public class Revista : Biblioteca
     {
+        public Revista(string titulo, string ano)
+            : base(titulo, ano, 1.0, 1.0, 7)
+        {
+        }
     }
 }

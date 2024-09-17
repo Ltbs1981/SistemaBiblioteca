@@ -1,12 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SistemaBiblioteca
 {
-    internal class Filme
+    public class Filme : Biblioteca
     {
+        public Filme(string titulo, string ano)
+            : base(titulo, ano, 5.0, 5.0, 7)
+        {
+        }
+        public override void Alugar()
+        {
+            base.Alugar();
+            Console.WriteLine("Qual o nome do filme");
+        }
     }
 }
